@@ -89,7 +89,7 @@ Embed official Instagram posts and reels seamlessly. BashIt accepts either an In
 
 Embed interactive posts and project updates from Peerlist. Pass a post ID (`ACTHOK8A7BG66JBGR17ALNR98QPL7Q`), a full post URL (`https://peerlist.io/.../post/...`), or an embed URL. BashIt frames the official responsive embed inside a WebTUI ASCII container and dynamically adjusts frame height using Peerlist's `setHeight` postMessage protocol.
 
-{{< peerlist "ACTHOK8A7BG66JBGR17ALNR98QPL7Q" >}}
+{{< peerlist "ACTHLKLLGMGQJGPBKI977NQ89DLP8M" >}}
 
 <details is-="accordion">
   <summary>󰅩 View Peerlist Shortcode Syntax</summary>
@@ -99,10 +99,10 @@ Embed interactive posts and project updates from Peerlist. Pass a post ID (`ACTH
 {{</* peerlist "ACTHOK8A7BG66JBGR17ALNR98QPL7Q" */>}}
 
 <!-- 2. By Full Peerlist Post URL -->
-{{</* peerlist "https://peerlist.io/yogini/post/ACTHOK8A7BG66JBGR17ALNR98QPL7Q" */>}}
+{{</* peerlist "https://peerlist.io/scroll/post/ACTHLKLLGMGQJGPBKI977NQ89DLP8M" */>}}
 
 <!-- 3. By Named Parameter -->
-{{</* peerlist id="ACTHOK8A7BG66JBGR17ALNR98QPL7Q" */>}}
+{{</* peerlist id="ACTHLKLLGMGQJGPBKI977NQ89DLP8M" */>}}
 ```
 
 </details>
@@ -214,7 +214,17 @@ For arbitrary articles, documentation links, and external references, the `linkc
 
 <!-- Without preview thumbnail image -->
 {{</* linkcard "https://kernel.org" noimage=true */>}}
+
+<!-- Using custom or self-hosted OpenGraph scraper API -->
+{{</* linkcard "https://example.com" scraperApi="https://my-scraper.workers.dev" */>}}
 ```
+
+> **Configuring the OpenGraph Scraper:**
+> By default, link cards and Daily.dev cards use the built-in OpenGraph microservice. You can customize the scraper endpoint globally in `hugo.toml`:
+> ```toml
+> [params.opengraph]
+>   scraperApi = "https://your-custom-scraper.workers.dev"
+> ```
 
 </details>
 
