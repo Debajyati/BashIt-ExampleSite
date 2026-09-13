@@ -1,0 +1,24 @@
+# Hugo build output and cache
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor and OS metadata
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Local screenshots and temporary files
+Screenshot_*.png
