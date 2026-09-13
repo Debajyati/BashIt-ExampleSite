@@ -1,0 +1,3 @@
+[submodule "themes/BashIt"]
+	path = themes/BashIt
+	url = https://github.com/Debajyati/BashIt
