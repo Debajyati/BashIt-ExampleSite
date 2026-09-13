@@ -4,12 +4,12 @@ date: 2026-09-12T20:00:00+05:30
 tags: ["bashit", "embeds", "social", "components", "privacy", "shortcodes", "webtui", "peerlist"]
 categories: ["Documentation", "Guides"]
 draft: false
-summary: "A complete guide and visual showcase of BashIt's terminal-themed social embeds: YouTube, X (Twitter), Instagram, Peerlist, Reddit, Dev.to, GitHub, Daily.dev, and OpenGraph Link Cards with zero fake metrics."
+summary: "A complete guide and visual showcase of BashIt's terminal-themed social embeds: YouTube, X (Twitter), Instagram, Peerlist, Reddit, Dev.to, GitHub, Daily.dev, and OpenGraph Link Cards"
 ---
 
 Traditional social media embeds are notorious for degrading web performance: they download megabytes of third-party JavaScript, inject tracking cookies, and clash with minimalist dark terminal designs.
 
-**BashIt** introduces a complete suite of **WebTUI-styled social cards and privacy-first embeds**. Each shortcode renders lightweight, authentic terminal UI cards with monospace typography, Symbols Nerd Font iconography, Catppuccin color highlights, and build-time metadata extraction with **zero fake/placeholder data**.
+**BashIt** introduces a complete suite of **WebTUI-styled social cards and privacy-first embeds**. Each shortcode renders lightweight, authentic terminal UI cards with monospace typography, Symbols Nerd Font iconography, Catppuccin color highlights, and build-time metadata extraction.
 
 ---
 
@@ -132,7 +132,7 @@ Embed Reddit discussions from technical(not restricted to 😅) communities (`r/
 
 ### 6. GitHub Repository Card
 
-Render live-styled repository metadata cards. Pass a repo name like `gohugoio/hugo` or a full repository URL; BashIt queries GitHub's public API at build time to populate the repository description, primary language, star tally, and fork count with zero fake statistics.
+Render live-styled repository metadata cards. Pass a repo name like `gohugoio/hugo` or a full repository URL; BashIt queries GitHub's public API at build time to populate the repository description, primary language, star tally, and fork count.
 
 {{< github "gohugoio/hugo" >}}
 
@@ -156,7 +156,7 @@ Render live-styled repository metadata cards. Pass a repo name like `gohugoio/hu
 
 ### 7. Dev.to Community Card
 
-Embed community articles from Dev.to. By passing the article URL, BashIt uses Dev.to's public API at build time to fetch the real title, reading time, author, summary, tags, and engagement counters with zero fake data.
+Embed community articles from Dev.to. By passing the article URL, BashIt uses Dev.to's public API at build time to fetch the real title, reading time, author, summary, tags, and engagement counters.
 
 {{< devto "https://dev.to/superfunicular/from-12-september-2026-eu-connected-products-must-be-accessible-by-design-what-that-asks-of-3jjd" >}}
 
@@ -177,7 +177,7 @@ Embed community articles from Dev.to. By passing the article URL, BashIt uses De
 
 ### 8. Daily.dev Curated Transmission
 
-Feature curated engineering posts and trending developer updates from Daily.dev with automatic social share preview image extraction (query parameters cleanly stripped) and OpenGraph summary metadata. Fake metric placeholders (such as made-up upvotes, fake comments, or arbitrary read times) have been completely eliminated.
+Feature curated engineering posts and trending developer updates from Daily.dev with automatic social share preview image extraction (query parameters cleanly stripped) and OpenGraph summary metadata.
 
 {{< dailydev "https://dly.to/g9vaRB1agcs" >}}
 
