@@ -1,0 +1,89 @@
+baseURL = 'http://localhost/'
+languageCode = 'en-us'
+title = "BashIt"
+theme = 'BashIt'
+
+[params]
+  webtuiTheme = 'catppuccin'
+
+# Navbar Brand Configuration
+# Customize the logo, icon, or emoji displayed before the site title in the navbar
+[params.navbar]
+  icon = "󰞷"          # Nerd Font terminal glyph
+  # icon = "⚡"          # Unicode emoji
+  # logo = "/favicon.svg" # Image or SVG logo path
+  # disableIcon = true   # Set to true to disable the brand icon/logo entirely
+  # icon = "&#xe62b;"    # Unicode / HTML entity (Default: Vim logo)
+
+# Typography & Font Customization
+# By default, "JetBrainsMono Nerd Font" is loaded and used everywhere across the site.
+# You can customize any of the 3 font slots below:
+[params.font]
+  # 1. Global Font (UI, headers, navigation, buttons, default base)
+  # global = "JetBrainsMono Nerd Font"
+
+  # 2. Paragraph Font (Article content, paragraphs, prose)
+  # paragraph = "JetBrainsMono Nerd Font"
+
+  # 3. Code Blocks Font (pre, code, highlights, terminal blocks)
+  # code = "JetBrainsMono Nerd Font"
+
+  # Optional webfont stylesheet URL (e.g. if loading a font from Google Fonts)
+  # fontUrl = "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+
+# OpenGraph Scraper Configuration
+# Used by {{< linkcard >}} and {{< dailydev >}} shortcodes to fetch link preview metadata
+[params.opengraph]
+  scraperApi = "https://xogapi.ddebajyati.workers.dev" # URL of your OpenGraph scraper API (defaults to built-in xogapi service)
+
+# Unified Comments Configuration
+# Options for provider: "cloudflare" (custom BBS) | "giscus" (GitHub Discussions) | "disabled"
+[params.comment]
+  enable = true
+  provider = "cloudflare"
+
+  [params.comment.cloudflare]
+    api = "http://localhost:8787" # URL of your deployed Cloudflare Worker (e.g. "https://bashit-comments.your-name.workers.dev")
+    mockMode = false # Set to true for offline / local preview using localStorage
+
+  [params.comment.giscus]
+    repo = "username/repo"
+    repoId = ""
+    category = "Announcements"
+    categoryId = ""
+    mapping = "pathname"
+    theme = "catppuccin_mocha"
+    lazy = false
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Docs'
+    pageRef = '/posts/bashit-theme-docs'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Shortcodes'
+    pageRef = '/posts/extended-shortcodes'
+    weight = 30
+
+  [[menus.main]]
+    name = 'Articles'
+    pageRef = '/posts'
+    weight = 40
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 50
