@@ -27,10 +27,15 @@ BashIt brings the tactile, distraction-free aesthetic of classic terminal UIs (T
 
 ## 2. Installation & Quickstart
 
-### Step 1: Clone the Theme
+### Step 1: Add BashIt as a Git Submodule
 Inside your Hugo site root directory:
 ```bash
-git clone https://github.com/webtui/BashIt themes/BashIt
+git submodule add https://github.com/Debajyati/BashIt.git themes/BashIt
+```
+
+And later you can update the submodule in your site directory to the latest commit using:
+```bash
+git submodule update --remote --merge
 ```
 
 ### Step 2: Install Local NPM Dependencies

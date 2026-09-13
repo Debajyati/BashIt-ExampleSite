@@ -83,6 +83,8 @@ draft = false
         <a is-="button" variant-="foreground0" size-="small" href="/posts/themes-and-typography/">[ Customize Theme → ]</a>
       </div>
     </column>
+  </div>
+
   <div box-="square" style="flex: 1 1 340px; padding: 1.25rem; background-color: var(--background0);">
     <column style="gap: 0.75rem;">
       <span is-="badge" variant-="red">󰗃 SOCIAL EMBEDS</span>
@@ -122,13 +124,28 @@ draft = false
   </div>
 </row>
 
-### Quickstart
+### Installation & Quickstart
+
+You can add this repo as a submodule of your Hugo site directory:
 
 ```bash
-# 1. Clone into your Hugo themes directory
-git clone https://github.com/webtui/BashIt themes/BashIt
+git submodule add https://github.com/Debajyati/BashIt.git themes/BashIt
+```
 
-# 2. Install dependencies & start dev server
+And later you can update the submodule in your site directory to the latest commit using this command:
+
+```bash
+git submodule update --remote --merge
+```
+
+Next, install dependencies and launch the Hugo development server:
+
+```bash
+# Install theme dependencies
 cd themes/BashIt && npm install
+
+# Run dev server from your site root
+cd ../..
 hugo server -D
 ```
+
