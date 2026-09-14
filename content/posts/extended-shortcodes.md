@@ -143,26 +143,26 @@ Exceeding 100,000 daily requests will trigger Cloudflare Worker tier throttling 
 The new `image` shortcode provides alignment (`left`, `center`, `right`), caption styling with terminal metadata, and optional ASCII borders (`box="square"`, `box="round"`).
 
 #### Center Aligned (with ASCII box border):
-{{< image src="/favicon.svg" alt="Terminal Favicon" caption="Center aligned icon with square border" align="center" width="80px" box="square" >}}
+{{< image src="https://w.wallhaven.cc/full/nm/wallhaven-nm6318.jpg" alt="Buddha Wallpaper" caption="Center aligned Buddha image with square border" align="center" width="80px" box="square" >}}
 
 #### Left Aligned:
-{{< image src="/favicon.svg" alt="Left Icon" caption="Left aligned icon" align="left" width="60px" >}}
+{{< image src="https://w.wallhaven.cc/full/x1/wallhaven-x1elzo.jpg" alt="Left Image" caption="Left aligned Krishna image" align="left" width="200px" >}}
 
 #### Right Aligned:
-{{< image src="/favicon.svg" alt="Right Icon" caption="Right aligned icon" align="right" width="60px" >}}
+{{< image src="https://w.wallhaven.cc/full/ml/wallhaven-mlyq2k.jpg" alt="Right Image" caption="Right aligned Pandava image" align="right" width="200px" >}}
 
 <details is-="accordion">
   <summary>󰅩 View Image Shortcode Syntax</summary>
 
 ```markdown
 <!-- Center aligned with square border -->
-{{</* image src="/favicon.svg" alt="Terminal Favicon" caption="Center aligned icon with square border" align="center" width="80px" box="square" */>}}
+{{</* image src="https://w.wallhaven.cc/full/nm/wallhaven-nm6318.jpg" alt="Buddha Wallpaper" caption="Center aligned Buddha image with square border" align="center" width="80px" box="square" */>}}
 
 <!-- Left aligned without border -->
-{{</* image src="/favicon.svg" alt="Left Icon" caption="Left aligned icon" align="left" width="60px" */>}}
+{{</* image src="https://w.wallhaven.cc/full/x1/wallhaven-x1elzo.jpg" alt="Left Image" caption="Left aligned Krishna image" align="left" width="200px" */>}}
 
 <!-- Right aligned without border -->
-{{</* image src="/favicon.svg" alt="Right Icon" caption="Right aligned icon" align="right" width="60px" */>}}
+{{</* image src="https://w.wallhaven.cc/full/ml/wallhaven-mlyq2k.jpg" alt="Right Image" caption="Right aligned Pandava image" align="right" width="200px" */>}}
 ```
 
 </details>
