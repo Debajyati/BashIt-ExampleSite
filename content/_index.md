@@ -149,3 +149,13 @@ cd ../..
 hugo server -D
 ```
 
+###  Star the Repos
+
+{{< webtui-separator direction="horizontal" cap="bisect" >}}
+
+{{< github "Debajyati/BashIt" >}}
+
+{{< github "https://github.com/Debajyati/BashIt-ExampleSite" >}}
+
+{{< github "https://github.com/Debajyati/bashit-comments" >}}
+
