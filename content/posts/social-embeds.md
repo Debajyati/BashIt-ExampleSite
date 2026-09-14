@@ -7,9 +7,7 @@ draft: false
 summary: "A complete guide and visual showcase of BashIt's terminal-themed social embeds: YouTube, X (Twitter), Instagram, Peerlist, Reddit, Dev.to, GitHub, Daily.dev, and OpenGraph Link Cards"
 ---
 
-Traditional social media embeds are notorious for degrading web performance: they download megabytes of third-party JavaScript, inject tracking cookies, and clash with minimalist dark terminal designs.
-
-**BashIt** introduces a complete suite of **WebTUI-styled social cards and privacy-first embeds**. Each shortcode renders lightweight, authentic terminal UI cards with monospace typography, Symbols Nerd Font iconography, Catppuccin color highlights, and build-time metadata extraction.
+**BashIt** has a complete suite of **WebTUI-styled social cards and privacy-first embeds**. Each shortcode renders lightweight, authentic terminal UI cards with monospace typography, Symbols Nerd Font iconography, Catppuccin color highlights, and build-time metadata extraction.
 
 ---
 
