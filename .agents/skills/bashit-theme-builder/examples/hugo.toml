@@ -1,0 +1,93 @@
+# Production-Ready hugo.toml Template for BashIt Theme
+# Place this at the root of your Hugo site
+
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "My Terminal Log"
+theme = 'BashIt'
+
+# ─── Visual Palette & Theme Engine ───────────────────────────────────────────
+[params]
+  # Available palettes:
+  #   'catppuccin'  - Catppuccin Mocha dark theme (default)
+  #   'gruvbox'     - Retro warm Gruvbox Dark
+  #   'nord'        - Cool Arctic Nord blue
+  #   'everforest'  - Calming natural Everforest
+  #   'osmium'      - Modern deep slate
+  #   'vitesse'     - Anthony Fu's high-contrast theme
+  webtuiTheme = 'catppuccin'
+
+# ─── Navbar Brand ─────────────────────────────────────────────────────────────
+[params.navbar]
+  # Icon: Accepts a Nerd Font glyph, Unicode emoji, or HTML entity
+  icon = "󰞷"
+  # Or use an image logo (SVG/PNG/WebP):
+  # logo = "/favicon.svg"
+  # Set to true to disable the brand icon completely:
+  # disableIcon = false
+
+# ─── Typography (3-Tier Font System) ──────────────────────────────────────────
+# By default, JetBrainsMono Nerd Font is used across all UI elements.
+# Any custom font declared here automatically retains Nerd Font icon fallbacks.
+[params.font]
+  # 1. Global UI Font (headings, navbar, badges, buttons, boxes)
+  # global = "JetBrainsMono Nerd Font"
+
+  # 2. Prose Body Font (article paragraphs, blockquotes, callout text)
+  # paragraph = "JetBrainsMono Nerd Font"
+
+  # 3. Monospace Code Font (pre, code, kbd, terminal listings)
+  # code = "JetBrainsMono Nerd Font"
+
+  # Optional webfont URL (e.g. Google Fonts):
+  # fontUrl = "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+
+# ─── OpenGraph Scraper API (for {{< linkcard >}} & {{< dailydev >}}) ──────────
+[params.opengraph]
+  scraperApi = "https://xogapi.ddebajyati.workers.dev"
+
+# ─── Unified Comments Engine ──────────────────────────────────────────────────
+# Choose between "cloudflare" (self-hosted SQLite BBS), "giscus" (GitHub Discussions), or "disabled"
+[params.comment]
+  enable = true
+  provider = "cloudflare"
+
+  # Cloudflare Workers + D1 Database Terminal BBS
+  [params.comment.cloudflare]
+    api = "https://bashit-comments.your-subdomain.workers.dev"
+    mockMode = false  # Set to true for offline / local testing via localStorage
+
+  # GitHub Discussions via Giscus
+  [params.comment.giscus]
+    repo = "username/repo"
+    repoId = "R_kgD..."
+    category = "Announcements"
+    categoryId = "DIC_kwD..."
+    mapping = "pathname"
+    theme = "catppuccin_mocha"
+    lazy = false
+
+# ─── Goldmark Renderer ────────────────────────────────────────────────────────
+# CRITICAL: unsafe = true is mandatory for BashIt to allow custom WebTUI HTML
+# attributes (<row>, <column>, box-="square", is-="badge") inside markdown.
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# ─── Main Navigation Menu ─────────────────────────────────────────────────────
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Articles'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
